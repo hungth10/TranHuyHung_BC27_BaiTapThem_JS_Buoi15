@@ -14,9 +14,9 @@ function catergory() {
   }
 
   // if (catergory === "Doanh Nghiệp") {
-  //     document.querySelector(".num-of-connection").style.display = "block";
+  //     document.querySelector("#num-of-connection").style.display = "block";
   // } else {
-  //     document.querySelector(".num-of-connection").style.display = "none";
+  //     document.querySelector("#num-of-connection").style.display = "none";
   // }
 }
 

@@ -14,7 +14,7 @@ function calctax() {
     document.querySelector('.name-bt1').innerHTML = "Họ và Tên: " + name;
     document.getElementById('print-rs-bt1').innerHTML = `
     Thuế thu nhập cá nhân của bạn là:
-    <p style="font-size: 25px;">${tax}</p>
+    <p style="font-size: 25px;">${tax} vnd</p>
     `
 }
 
