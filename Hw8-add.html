@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Homework 8 add</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- bài tập 1 -->
+  <div class="text-center title mt-4 mb-3">
+    <h1 style="font-size: 40px;">Bài tập 1</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            Tính thuế thu nhập cá nhân
+          </div>
+
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="userName-bt1" class="form-label"></label>
+              <input type="text" id="userName-bt1" class="form-control" placeholder="Họ và Tên">
+            </div>
+
+            <div class="mb-3">
+              <label for="yearIncome" class="form-label"></label>
+              <input type="text" id="yearIncome" class="form-control" placeholder="Tổng thu nhập 1 năm">
+            </div>
+
+            <div class="mb-3">
+              <label for="manDependent" class="form-label"></label>
+              <input type="text" id="manDependent" class="form-control" placeholder="Số người phụ thuộc">
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-success" onclick="calctax()">
+                Tính thuế thu nhập
+              </button>
+            </div>
+
+            <div id="result-bt1" class="text-center" style="display: none;">
+              <p class="name-bt1" style="font-size: 20px; margin-top: 20px;"></p>
+              <span id="print-rs-bt1"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bài tập 2 -->
+  <div class="text-center title mt-5 mb-3">
+    <h1 style="font-size: 40px;">Bài tập 2</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            Tính tiền cáp
+          </div>
+
+          <div class="card-body">
+            <div class="mb-3">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="catergory" class="form-label "></label>
+                  <select id="catergory" class="form-select" onchange="catergory()">
+                    <option>Chọn loại khách hàng</option>
+                    <option>Nhà Dân</option>
+                    <option>Doanh Nghiệp</option>
+                  </select>
+                </div>
+
+                <div id="num-of-connection" class="col-sm-6 num-of-connection" style="display: none;">
+                  <label for="numOfConnection" class="form-label"></label>
+                  <input type="text" id="numOfConnection" class="form-control" placeholder="Số kết nối">
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="clientID" class="form-label"></label>
+              <input type="text" id="clientID" class="form-control" placeholder="Mã khách hàng">
+            </div>
+
+            <div class="mb-3">
+              <label for="proChannel" class="form-label"></label>
+              <input type="text" id="proChannel" class="form-control" placeholder="Số kênh cao cấp">
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-success" onclick="calcCapFee()">
+                Tính tiền cáp
+              </button>
+            </div>
+
+            <div id="result-bt2" class="text-center" style="display: none;">
+              <p class="name-bt2" style="font-size: 20px; margin-top: 20px;"></p>
+              <span id="print-rs-bt2" style="font-size: 25px;"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="./caltax.js"></script>
+  <script src="./calcapfee.js"></script>
+</body>
+
+</html>
